@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+1.注：若周边商城需要分享，建议采用以下分享组件：
+<script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
+<script>
+    TGMobileShare({
+    shareTitle:'demo3分享标题', //不设置或设置为空时，页面有title，则调取title
+    shareDesc:'demo3分享详情', //不设置或设置为空时，页面有Description，则调取Description
+    shareImgUrl:'https://game.gtimg.cn/images/tgideas/act/a20151127tgmsdemo/share.jpg', //分享图片尺寸200*200，且填写绝对路径
+    shareLink:'', //分享链接要跟当前页面同域名(手Q分享有这个要求) ,不设置或设置为空时，默认调取当前URL
+    actName:'a20151127tgmsdemo' //点击流命名，用于统计分享量，专题一般采用目录名称如a20151029demo
+    });
+</script>
+2.注：若引入以下组件会跟小程序发生冲突，故采用以上分享。
+<!--<script src="//lol.qq.com/m/public/LOL_App.js"></script>-->
+
+
+<!-- 例如：商品详情页 detail-btn -->
+<a href="//lolriotmall-wx.qq.com/detail.shtml?id=10929" class="detail-btn" onclick="PTTSendClick('btn','buy','立即抢购');">立即抢购</a>
+
+
+<!-- 例如：商品列表页 list-btn -->
+<a href="//lolriotmall-wx.qq.com/list.shtml?tagid=266" class="list-btn" onclick="PTTSendClick('btn','buy','立即抢购');">立即抢购</a>
+
+
+<!-- 例如：首页 -->
+<a href="//lolriotmall-wx.qq.com/index.shtml" class="home-btn" title="首页" ontouchend="PTTSendClick('btn','link','首页');">首页</a>
+
+
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+String.prototype.params = function(sep) {
+	sep = sep || "&";
+	var paramMap = {};
+	if(this.length > 0) {
+		if(this.split("?").length > 1) {
+			var paramArray = this.split("?")[1].split(sep);
+		} else {
+			var paramArray = this.split(sep);
+		}
+		for(var i = 0; i < paramArray.length; ++i) {
+			var paramPair = paramArray[i].split("=");
+			paramPair[0] = unescape(paramPair[0]);
+			paramPair[1] = paramPair[1] ? unescape(paramPair[1]) : "";
+			if(!paramMap[paramPair[0]]) {
+				paramMap[paramPair[0]] = paramPair[1].replace(/\'|\"/g, "");
+			}
+		}
+	}
+	return paramMap;
+};
+//小程序或h5跳转
+function gotoUrl(obj, type) {
+	var _href = $(obj).attr("href");
+  var _params = _href.params();
+  var _goto = function() {
+    $.getScript("//res.wx.qq.com/open/js/jweixin-1.3.2.js", function() {
+      var ua = navigator.userAgent.toLowerCase();
+      if(!/micromessenger/.test(ua)) { //说明不在微信中
+        location.href = _href;
+      } else {
+        if(typeof(wx.miniProgram) != "undefined") {
+          wx.miniProgram.getEnv(function(res) {
+            if(res.miniProgram || res.miniprogram) {
+              // 走在小程序的逻辑
+              if (type == 'detail') {
+              	//跳转商品详情页
+              	wx.miniProgram.navigateTo({
+	                url: '/pages/detail/detail?id=' + _params["id"]
+	              });
+              } else if (type == 'list') {
+              	//跳转列表页
+              	if(_params["tagid"]) { //tagid
+	                wx.miniProgram.postMessage({
+	                  data: {
+	                    tagid: _params["tagid"]
+	                  }
+	                });
+	              } else if(_params["catid"]) { //分类id
+	                wx.miniProgram.postMessage({
+	                  data: {
+	                    catid: _params["catid"]
+	                  }
+	                });
+	              }
+	              wx.miniProgram.switchTab({
+	                url: '/pages/class/class'
+	              });
+              } else if (type == 'home') {
+              	//跳转小程序首页
+              	wx.miniProgram.switchTab({
+	                url: '/pages/index/index'
+	              });
+              } else {
+              	location.href = _href;	
+              }
+            } else {
+              location.href = _href;
+            }
+          });
+        } else {
+          location.href = _href;
+        }
+      }
+    });
+  };
+  _goto();
+  return false;
+}
+//详情按钮
+$(".detail-btn").click(function(e){
+  gotoUrl(this, 'detail');
+  e.preventDefault();
+  return false;
+});
+//列表按钮
+$(".list-btn").click(function(e){
+  gotoUrl(this, 'list');
+  e.preventDefault();
+  return false;
+});
+//首页按钮
+$(".home-btn").click(function(e){
+  gotoUrl(this, 'home');
+  e.preventDefault();
+  return false;
+});
+</script>
+</body>
+</html>
