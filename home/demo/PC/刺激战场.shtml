@@ -6,13 +6,13 @@
 <meta name="robots" content="all">
 <meta name="author" content="Tencent-CP">
 <meta name="Copyright" content="Tencent">
-<meta name="Description" content="ÌÚÑ¶¹â×Ó¹¤×÷ÊÒÈº×ÔÑĞ´ó×÷£¬Õı°æÕ½¶·ÌØÑµÊÖÓÎ¡¶¾øµØÇóÉú£º´Ì¼¤Õ½³¡¡·£¡Ğé»Ã4ÒıÇæ,´ÎÊÀ´úÍêÃÀ»­ÖÊ,ÖØÏÖ¶ËÓÎÊÓÌı¸ĞÊÜ;8000M¡Á8000MÊµ¾°µØÍ¼,È«Ãæ×ÔÓÉÊ©Õ¹Õ½Êõ;°ÙÈË¾º¼¼,ÕæÊµÉä»÷ÊÖ¸Ğ;ºÃÓÑÒ»¼ü×é¶Ó,ÓïÒô¿ªºÚ;¸øÄú´øÀ´Ò»³¡´Ì¼¤µÄ¾º¼¼ÌåÑé" />
-<meta name="Keywords" content="¾øµØÇóÉú,¾øµØÇóÉú´Ì¼¤Õ½³¡,¾øµØÇóÉúÊÖÓÎ,´Ì¼¤Õ½³¡,¾øµØÇóÉúÊÖÓÎÏÂÔØ,¾øµØÇóÉú´Ì¼¤Õ½³¡ÏÂÔØ,¾øµØÇóÉú¹ú·ş,³Ô¼¦ÊÖÓÎ,´Ì¼¤Õ½³¡ÏÂÔØ,¾øµØÇóÉú ´Ì¼¤Õ½³¡,¾øµØÇóÉúÏÂÔØ,¾òµØÇóÉú´Ì¼¤Õ½³¡,ÌÚÑ¶³Ô¼¦ÊÖÓÎ,¾øµØÇóÉú´óÌÓÉ±,ÌÚÑ¶¾øµØÇóÉúÊÖÓÎ"/>
-<title>-¾øµØÇóÉú´Ì¼¤Õ½³¡¹ÙÍøÍøÕ¾-ÌÚÑ¶ÓÎÏ· </title>
-<!--Ë«¶ËÅĞ¶Ï-->
+<meta name="Description" content="è…¾è®¯å…‰å­å·¥ä½œå®¤ç¾¤è‡ªç ”å¤§ä½œï¼Œæ­£ç‰ˆæˆ˜æ–—ç‰¹è®­æ‰‹æ¸¸ã€Šç»åœ°æ±‚ç”Ÿï¼šåˆºæ¿€æˆ˜åœºã€‹ï¼è™šå¹»4å¼•æ“,æ¬¡ä¸–ä»£å®Œç¾ç”»è´¨,é‡ç°ç«¯æ¸¸è§†å¬æ„Ÿå—;8000MÃ—8000Må®æ™¯åœ°å›¾,å…¨é¢è‡ªç”±æ–½å±•æˆ˜æœ¯;ç™¾äººç«æŠ€,çœŸå®å°„å‡»æ‰‹æ„Ÿ;å¥½å‹ä¸€é”®ç»„é˜Ÿ,è¯­éŸ³å¼€é»‘;ç»™æ‚¨å¸¦æ¥ä¸€åœºåˆºæ¿€çš„ç«æŠ€ä½“éªŒ" />
+<meta name="Keywords" content="ç»åœ°æ±‚ç”Ÿ,ç»åœ°æ±‚ç”Ÿåˆºæ¿€æˆ˜åœº,ç»åœ°æ±‚ç”Ÿæ‰‹æ¸¸,åˆºæ¿€æˆ˜åœº,ç»åœ°æ±‚ç”Ÿæ‰‹æ¸¸ä¸‹è½½,ç»åœ°æ±‚ç”Ÿåˆºæ¿€æˆ˜åœºä¸‹è½½,ç»åœ°æ±‚ç”Ÿå›½æœ,åƒé¸¡æ‰‹æ¸¸,åˆºæ¿€æˆ˜åœºä¸‹è½½,ç»åœ°æ±‚ç”Ÿ åˆºæ¿€æˆ˜åœº,ç»åœ°æ±‚ç”Ÿä¸‹è½½,æ˜åœ°æ±‚ç”Ÿåˆºæ¿€æˆ˜åœº,è…¾è®¯åƒé¸¡æ‰‹æ¸¸,ç»åœ°æ±‚ç”Ÿå¤§é€ƒæ€,è…¾è®¯ç»åœ°æ±‚ç”Ÿæ‰‹æ¸¸"/>
+<title>-ç»åœ°æ±‚ç”Ÿåˆºæ¿€æˆ˜åœºå®˜ç½‘ç½‘ç«™-è…¾è®¯æ¸¸æˆ </title>
+<!--åŒç«¯åˆ¤æ–­-->
 <script>
     if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    	//ÒÆ¶¯¶ËÒ³ÃæµØÖ·
+    	//ç§»åŠ¨ç«¯é¡µé¢åœ°å€
         window.location.href = "";
     }
     if(window.location.protocol == "https:"){
@@ -34,7 +34,7 @@ fieldset,img,abbr,acronym{border:0}
 .wrap_ieg{margin:0 auto;padding:25px 30px;width:940px;}
 .wrap_ieg a{color:#656565;}
 #afooter .e{font-size:10px;-webkit-text-size-adjust:none;}
-/* Ò³ÃæÑùÊ½ */
+/* é¡µé¢æ ·å¼ */
 .c:before,.c:after {content:"";display:table}
 .c:after {clear:both}
 .c {zoom:1}
@@ -49,15 +49,15 @@ a:hover {text-decoration:none;}
 .pa {position:absolute;}
 .db {display:block;text-indent:-999em;}
 .sp{background: url(ossweb-img/sp.png) no-repeat;}
-/*Ò³ÃæÑùÊ½*/
+/*é¡µé¢æ ·å¼*/
 </style>
 <link rel="stylesheet" href="//game.gtimg.cn/images/cjm/web201801/public.css">
 </head>
 <body>
 <h1 class="hide"></h1>
-<!-- Í·²¿¿ªÊ¼ -->
+<!-- å¤´éƒ¨å¼€å§‹ -->
 <!--#include virtual="/web201801/inc/topnav.htm" -->
-<!-- Í·²¿½áÊø -->
+<!-- å¤´éƒ¨ç»“æŸ -->
 <div class="par1">
 	<div class="containerz">
 			
@@ -97,19 +97,19 @@ a:hover {text-decoration:none;}
 <script src="//ossweb-img.qq.com/images/js/title.js"></script>
 <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
 <script src="//game.gtimg.cn/images/cjm/web201801/script.js"></script>
-<!--Í³¼Æ-->
+<!--ç»Ÿè®¡-->
 <script src="http://ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
-//´Ë¶Î´úÂë²»ÄÜ·Åµ½ÍâÁ´JSÖĞ£¬
-var setSite={ //ÉèÖÃÍøÕ¾ÊôĞÔ
- siteType:"axxxxx", //±ØÌîÏî:"os"´ú±íÊÇ¹ÙÍø£¬Èç¹û²»ÊÇ£¬ÔòÌîĞ´actNameÀıÈça20160701xxx
- pageType:"index", //±ØÌîÏî:±¾Ò³ÃæµÄ¶¨Î»£»°´ÕÕÒ³Ãæº¬ÒåÌîĞ´ÀıÈçmain||list||detail||download||share||page1||pageN
- pageName:"Ê×Ò³", //±ØÌîÏî:Ò³ÃæÖĞÎÄÃû
- osact:0, //Ñ¡ÌîÏî:ÊÇ·ñÊÇ¹ÙÍø×¨Ìâ(ÔÚ¹ÙÍøÔËÓªµÄ×¨Ìâ)boolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıosact=1À´Áé»îÉèÖÃ
- ingame:0, //Ñ¡ÌîÏî:ÊÇ·ñÍ¶·ÅÔÚÓÎÏ·APPÄÚboolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıingame=1À´Áé»îÉèÖÃ
- stayTime:0 //Ñ¡ÌîÏî:ÊÇ·ñĞèÒªÍ³¼ÆÍ£ÁôÊ±³¤boolean£»Ä¬ÈÏÊÇ0
+//æ­¤æ®µä»£ç ä¸èƒ½æ”¾åˆ°å¤–é“¾JSä¸­ï¼Œ
+var setSite={ //è®¾ç½®ç½‘ç«™å±æ€§
+ siteType:"axxxxx", //å¿…å¡«é¡¹:"os"ä»£è¡¨æ˜¯å®˜ç½‘ï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™å¡«å†™actNameä¾‹å¦‚a20160701xxx
+ pageType:"index", //å¿…å¡«é¡¹:æœ¬é¡µé¢çš„å®šä½ï¼›æŒ‰ç…§é¡µé¢å«ä¹‰å¡«å†™ä¾‹å¦‚main||list||detail||download||share||page1||pageN
+ pageName:"é¦–é¡µ", //å¿…å¡«é¡¹:é¡µé¢ä¸­æ–‡å
+ osact:0, //é€‰å¡«é¡¹:æ˜¯å¦æ˜¯å®˜ç½‘ä¸“é¢˜(åœ¨å®˜ç½‘è¿è¥çš„ä¸“é¢˜)booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°osact=1æ¥çµæ´»è®¾ç½®
+ ingame:0, //é€‰å¡«é¡¹:æ˜¯å¦æŠ•æ”¾åœ¨æ¸¸æˆAPPå†…booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°ingame=1æ¥çµæ´»è®¾ç½®
+ stayTime:0 //é€‰å¡«é¡¹:æ˜¯å¦éœ€è¦ç»Ÿè®¡åœç•™æ—¶é•¿booleanï¼›é»˜è®¤æ˜¯0
 }
-if(typeof(pgvMain)=='function')pgvMain();//Ç§Íò²»ÄÜÍü¼Ç£¡
+if(typeof(pgvMain)=='function')pgvMain();//åƒä¸‡ä¸èƒ½å¿˜è®°ï¼
 </script>
 </body>
 </html>

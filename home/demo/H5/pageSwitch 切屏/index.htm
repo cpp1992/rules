@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="Description" content="ÕâÀïÊÇ¹Ø¼ü×ÖÃèÊö">
-<meta name="Keywords" content="ÕâÀïÊÇ¹Ø¼ü×Ö" />
+<meta name="Description" content="è¿™é‡Œæ˜¯å…³é”®å­—æè¿°">
+<meta name="Keywords" content="è¿™é‡Œæ˜¯å…³é”®å­—" />
 <title></title>
 <script>
 function AutoPage(){ 
@@ -50,33 +50,33 @@ body,html{width: 100%; height: 100%;}
 <body>
 <div class="wrap" id="pages">
      <div class="page page1 current">
-          <h1>µÚÒ»Ò³</h1>
+          <h1>ç¬¬ä¸€é¡µ</h1>
           <div class="box">
-            <p>ÕâÀïÊÇµÚÒ»ÆÁÄÚÈİ</p>
+            <p>è¿™é‡Œæ˜¯ç¬¬ä¸€å±å†…å®¹</p>
           </div>
      </div>
      <div class="page page2">
-          <h1>µÚ¶şÒ³</h1>
+          <h1>ç¬¬äºŒé¡µ</h1>
           <div class="box">
-             <p>ÕâÀïÊÇµÚ¶şÆÁÄÚÈİ</p>
+             <p>è¿™é‡Œæ˜¯ç¬¬äºŒå±å†…å®¹</p>
           </div>
      </div>
 </div>
 <script src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
 <script src="js/pageSwitch.js"></script>
 <script>
-//ÇĞÆÁ
+//åˆ‡å±
 (function(){
 	var pw=new pageSwitch('pages',{
-		duration:400,           //int Ò³Ãæ¹ı¶ÉÊ±¼ä
-	    direction:1,            //int Ò³ÃæÇĞ»»·½Ïò£¬0ºáÏò£¬1×İÏò
-	    start:0,                //int Ä¬ÈÏÏÔÊ¾Ò³Ãæ
-	    loop:false,             //bool ÊÇ·ñÑ­»·ÇĞ»»
-	    transition:'scroll' //string|function×ª³¡·½Ê½
+		duration:400,           //int é¡µé¢è¿‡æ¸¡æ—¶é—´
+	    direction:1,            //int é¡µé¢åˆ‡æ¢æ–¹å‘ï¼Œ0æ¨ªå‘ï¼Œ1çºµå‘
+	    start:0,                //int é»˜è®¤æ˜¾ç¤ºé¡µé¢
+	    loop:false,             //bool æ˜¯å¦å¾ªç¯åˆ‡æ¢
+	    transition:'scroll' //string|functionè½¬åœºæ–¹å¼
 	});
     var index = pw.current;
-    PTTSendClick('page','page' + index,'µÚ'+index +'Ò³');
-    //pw.remove(1); //É¾³ıÄ³Ò»ÆÁÄÚÈİ
+    PTTSendClick('page','page' + index,'ç¬¬'+index +'é¡µ');
+    //pw.remove(1); //åˆ é™¤æŸä¸€å±å†…å®¹
 })()
 </script>
 </body>

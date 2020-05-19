@@ -6,8 +6,8 @@
 <meta name="robots" content="all" />
 <meta name="author" content="Tencent-CP" />
 <meta name="Copyright" content="Tencent">
-<meta name="Keywords" content="Ïà¾ÛÊ±¿Ì ½¨¸öµºÒ»ÆğÀÖ" />
-<meta name="Description" content="¡¶È«ÃñµºÖ÷¡·ÊÖÓÎ²»É¾µµÔ¤Ô¼»ğÈÈ½øĞĞÖĞ" />
+<meta name="Keywords" content="ç›¸èšæ—¶åˆ» å»ºä¸ªå²›ä¸€èµ·ä¹" />
+<meta name="Description" content="ã€Šå…¨æ°‘å²›ä¸»ã€‹æ‰‹æ¸¸ä¸åˆ æ¡£é¢„çº¦ç«çƒ­è¿›è¡Œä¸­" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -96,8 +96,8 @@ body,html{background:#f0f1f0;width: 100%;height: 100%;overflow: hidden;}
     </div>
 	<div class="main">
 		<div class="put c">
-			<a href="//qmdz.qq.com/cp/a20180102yyzm/index_wqm.shtml" class="btn_want sp db" ontouchend="PTTSendClick('btn','btn_want','Ô¤Ô¼²»É¾µµ');">Ô¤Ô¼²»É¾µµ</a>
-			<a href="//qmdz.qq.com" class="btn_home sp db" ontouchend="PTTSendClick('btn','btn_home','½øÈë¹ÙÍø');">½øÈë¹ÙÍø</a>
+			<a href="//qmdz.qq.com/cp/a20180102yyzm/index_wqm.shtml" class="btn_want sp db" ontouchend="PTTSendClick('btn','btn_want','é¢„çº¦ä¸åˆ æ¡£');">é¢„çº¦ä¸åˆ æ¡£</a>
+			<a href="//qmdz.qq.com" class="btn_home sp db" ontouchend="PTTSendClick('btn','btn_home','è¿›å…¥å®˜ç½‘');">è¿›å…¥å®˜ç½‘</a>
 		</div>
 	</div>
 </div>
@@ -147,24 +147,24 @@ body,html{background:#f0f1f0;width: 100%;height: 100%;overflow: hidden;}
  	var src='//game.gtimg.cn/images/syhm/cp/a20180112love/video.mp4';
     var videoPlayer=new MMD.VideoPlayer(
         {
-            videoElement:document.getElementById('video'),//[±ØÌî],videoÔªËØ;
+            videoElement:document.getElementById('video'),//[å¿…å¡«],videoå…ƒç´ ;
             src:src,
             loop:false,
             muted:false,
             poster:'//game.gtimg.cn/images/syhm/cp/a20180112love/poster.jpg',
             onStart:function(){
-            	PTTSendClick('video','start','²¥·ÅÊÓÆµ');
+            	PTTSendClick('video','start','æ’­æ”¾è§†é¢‘');
             },
             onEnd:function(){
             	g('.video_box').style.display='none';
             	g('.main').style.display='block';
-            	PTTSendClick('video','end','Í£Ö¹ÊÓÆµ');
+            	PTTSendClick('video','end','åœæ­¢è§†é¢‘');
             }
         }
     );
     document.addEventListener('touchmove',function(event){
     	if (event.cancelable) {
-	        // ÅĞ¶ÏÄ¬ÈÏĞĞÎªÊÇ·ñÒÑ¾­±»½ûÓÃ
+	        // åˆ¤æ–­é»˜è®¤è¡Œä¸ºæ˜¯å¦å·²ç»è¢«ç¦ç”¨
 	        if (!event.defaultPrevented) {
 	            event.preventDefault();
 	        }
@@ -187,23 +187,23 @@ body,html{background:#f0f1f0;width: 100%;height: 100%;overflow: hidden;}
 <script src="//ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
-//´Ë¶Î´úÂë²»ÄÜ·Åµ½ÍâÁ´JSÖĞ£¬
-var setSite={ //ÉèÖÃÍøÕ¾ÊôĞÔ
- siteType:"a20180112love", //±ØÌîÏî:"os"´ú±íÊÇ¹ÙÍø£¬Èç¹û²»ÊÇ£¬ÔòÌîĞ´actNameÀıÈça20160701xxx
- pageType:"index", //±ØÌîÏî:±¾Ò³ÃæµÄ¶¨Î»£»°´ÕÕÒ³Ãæº¬ÒåÌîĞ´ÀıÈçmain||list||detail||download||share||page1||pageN
- pageName:"Ïà¾ÛÊ±¿Ì ½¨¸öµºÒ»ÆğÀÖ ", //±ØÌîÏî:Ò³ÃæÖĞÎÄÃû
- osact:0, //Ñ¡ÌîÏî:ÊÇ·ñÊÇ¹ÙÍø×¨Ìâ(ÔÚ¹ÙÍøÔËÓªµÄ×¨Ìâ)boolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıosact=1À´Áé»îÉèÖÃ
- ingame:0, //Ñ¡ÌîÏî:ÊÇ·ñÍ¶·ÅÔÚÓÎÏ·APPÄÚboolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıingame=1À´Áé»îÉèÖÃ
- stayTime:0 //Ñ¡ÌîÏî:ÊÇ·ñĞèÒªÍ³¼ÆÍ£ÁôÊ±³¤boolean£»Ä¬ÈÏÊÇ0
+//æ­¤æ®µä»£ç ä¸èƒ½æ”¾åˆ°å¤–é“¾JSä¸­ï¼Œ
+var setSite={ //è®¾ç½®ç½‘ç«™å±æ€§
+ siteType:"a20180112love", //å¿…å¡«é¡¹:"os"ä»£è¡¨æ˜¯å®˜ç½‘ï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™å¡«å†™actNameä¾‹å¦‚a20160701xxx
+ pageType:"index", //å¿…å¡«é¡¹:æœ¬é¡µé¢çš„å®šä½ï¼›æŒ‰ç…§é¡µé¢å«ä¹‰å¡«å†™ä¾‹å¦‚main||list||detail||download||share||page1||pageN
+ pageName:"ç›¸èšæ—¶åˆ» å»ºä¸ªå²›ä¸€èµ·ä¹ ", //å¿…å¡«é¡¹:é¡µé¢ä¸­æ–‡å
+ osact:0, //é€‰å¡«é¡¹:æ˜¯å¦æ˜¯å®˜ç½‘ä¸“é¢˜(åœ¨å®˜ç½‘è¿è¥çš„ä¸“é¢˜)booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°osact=1æ¥çµæ´»è®¾ç½®
+ ingame:0, //é€‰å¡«é¡¹:æ˜¯å¦æŠ•æ”¾åœ¨æ¸¸æˆAPPå†…booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°ingame=1æ¥çµæ´»è®¾ç½®
+ stayTime:0 //é€‰å¡«é¡¹:æ˜¯å¦éœ€è¦ç»Ÿè®¡åœç•™æ—¶é•¿booleanï¼›é»˜è®¤æ˜¯0
 };
-if(typeof(pgvMain)=='function')pgvMain();//Ç§Íò²»ÄÜÍü¼Ç£¡
+if(typeof(pgvMain)=='function')pgvMain();//åƒä¸‡ä¸èƒ½å¿˜è®°ï¼
 //
  TGMobileShare({
-	 shareTitle:'ÌÚÑ¶Ê×¿îºÃÓÑ»¥í¡ÊÖÓÎ¡¶È«ÃñµºÖ÷¡·À´À²£¡', //²»ÉèÖÃ»òÉèÖÃÎª¿ÕÊ±£¬Ò³ÃæÓĞtitle£¬Ôòµ÷È¡title
-	 shareDesc:'¡¶È«ÃñµºÖ÷¡·ÊÖÓÎ²»É¾µµÔ¤Ô¼»ğÈÈ½øĞĞÖĞ', //²»ÉèÖÃ»òÉèÖÃÎª¿ÕÊ±£¬Ò³ÃæÓĞDescription£¬Ôòµ÷È¡Description
-	 shareImgUrl:'//game.gtimg.cn/images/syhm/cp/a20180112love/share.jpg', //·ÖÏíÍ¼Æ¬³ß´ç200*200£¬ÇÒÌîĞ´¾ø¶ÔÂ·¾¶
-	 shareLink:'', //·ÖÏíÁ´½ÓÒª¸úµ±Ç°Ò³ÃæÍ¬ÓòÃû(ÊÖQ·ÖÏíÓĞÕâ¸öÒªÇó) ,²»ÉèÖÃ»òÉèÖÃÎª¿ÕÊ±£¬Ä¬ÈÏµ÷È¡µ±Ç°URL
-	 actName:'a20180112love' //µã»÷Á÷ÃüÃû£¬ÓÃÓÚÍ³¼Æ·ÖÏíÁ¿£¬×¨ÌâÒ»°ã²ÉÓÃÄ¿Â¼Ãû³ÆÈça20151029demo
+	 shareTitle:'è…¾è®¯é¦–æ¬¾å¥½å‹äº’æ€¼æ‰‹æ¸¸ã€Šå…¨æ°‘å²›ä¸»ã€‹æ¥å•¦ï¼', //ä¸è®¾ç½®æˆ–è®¾ç½®ä¸ºç©ºæ—¶ï¼Œé¡µé¢æœ‰titleï¼Œåˆ™è°ƒå–title
+	 shareDesc:'ã€Šå…¨æ°‘å²›ä¸»ã€‹æ‰‹æ¸¸ä¸åˆ æ¡£é¢„çº¦ç«çƒ­è¿›è¡Œä¸­', //ä¸è®¾ç½®æˆ–è®¾ç½®ä¸ºç©ºæ—¶ï¼Œé¡µé¢æœ‰Descriptionï¼Œåˆ™è°ƒå–Description
+	 shareImgUrl:'//game.gtimg.cn/images/syhm/cp/a20180112love/share.jpg', //åˆ†äº«å›¾ç‰‡å°ºå¯¸200*200ï¼Œä¸”å¡«å†™ç»å¯¹è·¯å¾„
+	 shareLink:'', //åˆ†äº«é“¾æ¥è¦è·Ÿå½“å‰é¡µé¢åŒåŸŸå(æ‰‹Qåˆ†äº«æœ‰è¿™ä¸ªè¦æ±‚) ,ä¸è®¾ç½®æˆ–è®¾ç½®ä¸ºç©ºæ—¶ï¼Œé»˜è®¤è°ƒå–å½“å‰URL
+	 actName:'a20180112love' //ç‚¹å‡»æµå‘½åï¼Œç”¨äºç»Ÿè®¡åˆ†äº«é‡ï¼Œä¸“é¢˜ä¸€èˆ¬é‡‡ç”¨ç›®å½•åç§°å¦‚a20151029demo
  });
 </script>
 </body>

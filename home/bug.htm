@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>�ȹ��Ŀ�</title>
+	<title>踩过的坑</title>
 	<style type="text/css">
 		.bug_con{width:1000px;margin:0 auto;padding-top:30px;}
 		.bug_tit{font-weight:bold;font-size:30px;color:#e56744;line-height:50px;}
@@ -18,27 +18,27 @@
 <body>
 <div class="topbox">
      <div class="container c">
-     	  <a href="javascript:;" class="logo db" title="�����澳�Ļ��������޹�˾"><img src="images/logo.jpg" alt="" /></a>
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="images/logo.jpg" alt="" /></a>
      	  <ul class="toplist c">
-     	  	  <li><a href="index.htm" title="��Ѷ">��Ѷ</a></li>
-     	  	  <li><a href="����.htm" title="����">����</a></li>
-     	  	  <li><a href="//docs.qq.com/doc/DQ0JueG5HTFRjQmpO" target="_blank" title="�ֽ�">�ֽ�</a></li>
-     	  	  <li><a href="effect.htm" title="Ч��">Ч��</a></li>
-     	  	  <li><a href="study.htm" title="ѧϰ����">ѧϰ����</a></li>
-     	  	  <li><a href="bug.htm" title="�ȹ��Ŀ�">�ȹ��Ŀ�</a></li>
+     	  	  <li><a href="index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="//docs.qq.com/doc/DQ0JueG5HTFRjQmpO" target="_blank" title="字节">字节</a></li>
+     	  	  <li><a href="effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="study.htm" title="学习内容">学习内容</a></li>
+     	  	  <li><a href="bug.htm" title="踩过的坑">踩过的坑</a></li>
      	  </ul>
      </div>
 </div>
 <div class="wrap">
 <div class="bug_con">
-	<p class="bug_tit">��Щ�����ǲȹ��Ŀ�</p>
-	<p class="bug_txt">�ɳ����ĵã��ȹ��Ŀӣ������ܽᣬ�����Ի��������</p>
+	<p class="bug_tit">那些年我们踩过的坑</p>
+	<p class="bug_txt">成长的心得，踩过的坑，经验总结，都可以汇总在这里。</p>
 	<dl class="bug_list">
-		<dt><em>Q��</em>iOSϵͳ�£�ʹ��swiperʱ������ݹ��࣬�����һֱˢ�µ������ô�죿</dt>
-		<dd><em>A��</em>��������Slide���ܣ�����Slide����Dom�ṹ�б��־����ٵ�Slide��ֻ��Ⱦ��ǰ�ɼ���slide��ǰ���slide���������������ɼ���Slide��ÿ���л�ʱ����Ⱦ�µ�Slide�������Slide�ܶ��ʱ��������Slide���и��ӵ�Dom���ṹʱ�����ܻ��кܴ��������<span>����л���ͬѧ�ṩ�������~��</span>ʹ�÷�����<a href="//www.swiper.com.cn/api/virtual/374.html" target="_blank" class="link">https://www.swiper.com.cn/api/virtual/374.html</a></dd>
-		<dt><em>Q��</em>iOSϵͳ�£�ҳ���������input����select��ʱ�򣬵����ҳ�������ȥ�������ٴε��ʧЧ��ô���أ�</dt>
-		<dd><em>A��</em>���/ʧȥ����ʱ�ı�scrollTop��<span>����л��С�ͬѧͶ������⼰�������~��</span>
-<pre>  //ios�˽�����selectҳ�����Ƶ�����
+		<dt><em>Q：</em>iOS系统下，使用swiper时如果内容过多，会出现一直刷新的情况怎么办？</dt>
+		<dd><em>A：</em>开启虚拟Slide功能，虚拟Slide会在Dom结构中保持尽量少的Slide，只渲染当前可见的slide和前后的slide，而隐藏其他不可见的Slide，每次切换时就渲染新的Slide。当你的Slide很多的时候，尤其是Slide中有复杂的Dom树结构时，性能会有很大的提升。<span>（感谢吕璇同学提供解决方案~）</span>使用方法：<a href="//www.swiper.com.cn/api/virtual/374.html" target="_blank" class="link">https://www.swiper.com.cn/api/virtual/374.html</a></dd>
+		<dt><em>Q：</em>iOS系统下，页面里如果有input或者select的时候，点击后页面会跑上去，导致再次点击失效怎么办呢？</dt>
+		<dd><em>A：</em>获得/失去焦点时改变scrollTop。<span>（感谢吕小璇同学投稿此问题及解决方案~）</span>
+<pre>  //ios端解决点击select页面上移的问题
   var stop;
   $('select,input').on('focus',function () {
       stop=$(window).scrollTop();
@@ -48,14 +48,14 @@
   })
 </pre>
 		</dd>
-		<dt><em>Q��</em>swiper ���д��һ��Ĭ��display:none�������� ����ֲ����ֲ� ��һҳ��һҳ ���ʧЧ���⡣<span>����л����ͬѧͶ�壩</span></dt>
-		<dd><em>A��</em>����observer��̬�����,���ı�swiper����ʽ����������/��ʾ�������޸�swiper����Ԫ��ʱ���Զ���ʼ��swiper��<br />ʹ�÷�����<a href="//www.swiper.com.cn/api/observer/218.html" target="_blank" class="link">https://www.swiper.com.cn/api/observer/218.html</a></dd>
-		<dt><em>Q��</em>����DomԪ��תͼƬ���dom2img��һЩ�ӣ�</dt>
-		<dd><em>A��</em>��Ϸ��������а�׿�޷�����������������δ֪��������⻹��msdk��������⡣Ŀǰ���ǽ���ʵ�ڲ���ֱ��������Ϸ��������λͬѧ�н��������ӭ������</dd>
-		<dt><em>Q��</em>��һЩ��׿���ϣ�΢����������������ҳ���������һЩ��������ʾ���꣬���߲��ֻ��ң��绪Ϊ</dt>
+		<dt><em>Q：</em>swiper 如果写在一个默认display:none的容器下 会出现不能轮播 上一页下一页 点击失效问题。<span>（感谢梁嘉同学投稿）</span></dt>
+		<dd><em>A：</em>启动observer动态检查器,当改变swiper的样式（例如隐藏/显示）或者修改swiper的子元素时，自动初始化swiper。<br />使用方法：<a href="//www.swiper.com.cn/api/observer/218.html" target="_blank" class="link">https://www.swiper.com.cn/api/observer/218.html</a></dd>
+		<dt><em>Q：</em>关于Dom元素转图片组件dom2img的一些坑？</dt>
+		<dd><em>A：</em>游戏内最近会有安卓无法长按保存的情况，暂未知是组件问题还是msdk浏览器问题。目前都是建议实在不行直接跳出游戏。后期哪位同学有解决方案欢迎反馈。</dd>
+		<dt><em>Q：</em>在一些安卓机上，微信内置浏览器会出现页面整体大了一些，内容显示不完，或者布局会乱？如华为</dt>
 		<dd>
-			<em>A��</em>΢��webview�����˵��������С�Ĺ��ܣ��û����Ը���ʵ��������е��ڡ����Ǻܶ��ƶ���ҳ��Ŀ�������ʹ��rem��Ϊ��λ�ģ������С�ı��Ժ󣬻����ҳ�沼�ִ��ҵ�������������Ҫ��ֹ��΢�ŵ�����Ŵ��ܡ�<em>����������£�</em><br />
-<em>��׿�ֻ���ֹ΢�ſͻ����޸������С��</em>
+			<em>A：</em>微信webview内置了调整字体大小的功能，用户可以根据实际情况进行调节。但是很多移动端页面的开发都是使用rem作为单位的，字体大小改变以后，会出现页面布局错乱的情况，因此我们要禁止掉微信的字体放大功能。<em>解决方法如下：</em><br />
+<em>安卓手机禁止微信客户端修改字体大小：</em>
 <pre>
    (function() {
        if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
@@ -68,29 +68,29 @@
                document.attachEvent("onWeixinJSBridgeReady", handleFontSize);  }
        }
        function handleFontSize() {
-           // ������ҳ����ΪĬ�ϴ�С
+           // 设置网页字体为默认大小
            WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
-           // ��д������ҳ�����С���¼�
+           // 重写设置网页字体大小的事件
            WeixinJSBridge.on('menu:setfont', function() {
                WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
            });
        }
    })();
 </pre>
-<em>IOSϵͳ��ֹ΢�ſͻ����޸������С</em>
+<em>IOS系统禁止微信客户端修改字体大小</em>
 <pre>
-  body { /* IOS��ֹ΢�ŵ��������С */
+  body { /* IOS禁止微信调整字体大小 */
     -webkit-text-size-adjust: 100% !important;
     text-size-adjust: 100% !important;
     -moz-text-size-adjust: 100% !important;
   }
 </pre>
 		</dd>
-		<dt><em>Q��</em>iOS�ƶ�����ָ������Ļ����Ƶ�����ƶ��˻���ֿ��ٵ�������ô�죿</dt>
-		<dd><em>A��</em>iOS�ж��е����ԣ����Կ���Ԫ�����ƶ��豸���Ƿ�ʹ�ù����ص�Ч�����������´��롣
+		<dt><em>Q：</em>iOS移动端手指触摸屏幕过于频繁，移动端会出现卡顿的现象怎么办？</dt>
+		<dd><em>A：</em>iOS中独有的属性，属性控制元素在移动设备上是否使用滚动回弹效果。加上以下代码。
 <pre>
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;//������Կ���ʵ�֣���ָ�뿪��Ļ����Ի���һ�ξ���
+  -webkit-overflow-scrolling: touch;//这个属性可以实现，手指离开屏幕会惯性滑动一段距离
 </pre>
 		</dd>
 	</dl>

@@ -8,60 +8,60 @@
 <meta name="Copyright" content="Tencent">
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
-<title>�ع��淶</title>
+<title>重构规范</title>
 <link href="../css/comm.css" rel="stylesheet">
 </head>
 <body>
-<h1 class="hide">�ع��淶</h1>
+<h1 class="hide">重构规范</h1>
 <div class="topbox">
      <div class="container c">
-     	  <a href="javascript:;" class="logo db" title="�����澳�Ļ��������޹�˾"><img src="../images/logo.jpg" alt="" /></a>
+     	  <a href="javascript:;" class="logo db" title="西安奇境文化传播有限公司"><img src="../images/logo.jpg" alt="" /></a>
      	  <ul class="toplist c">
-     	  	  <li><a href="../index.htm" title="��Ѷ">��Ѷ</a></li>
-     	  	  <li><a href="../����.htm" title="����">����</a></li>
-     	  	  <li><a href="//docs.qq.com/doc/DQ0JueG5HTFRjQmpO" target="_blank" title="�ֽ�">�ֽ�</a></li>
-     	  	  <li><a href="../effect.htm" title="Ч��">Ч��</a></li>
-     	  	  <li><a href="../study.htm" title="ѧϰ����">ѧϰ����</a></li>
-     	  	  <li><a href="../bug.htm" title="�ȹ��Ŀ�">�ȹ��Ŀ�</a></li>
+     	  	  <li><a href="../index.htm" title="腾讯">腾讯</a></li>
+     	  	  <li><a href="../畅游.htm" title="畅游">畅游</a></li>
+     	  	  <li><a href="//docs.qq.com/doc/DQ0JueG5HTFRjQmpO" target="_blank" title="字节">字节</a></li>
+     	  	  <li><a href="../effect.htm" title="效果">效果</a></li>
+     	  	  <li><a href="../study.htm" title="学习内容">学习内容</a></li>
+     	  	  <li><a href="../bug.htm" title="踩过的坑">踩过的坑</a></li>
      	  </ul>
      </div>
 </div>
 <div class="wrap">
 	 <div class="container pat20">
-	 	   <h2 class="stit"><a href="../demo/PC/��ս.htm" target="_blank">��սdemo</a></h2>
-	 	   <h2 class="stit">��ս����սҳ�λר�⵼��ԭ��js�������</h2>
+	 	   <h2 class="stit"><a href="../demo/PC/逆战.htm" target="_blank">逆战demo</a></h2>
+	 	   <h2 class="stit">逆战与逆战页游活动专题导航原生js导航插件</h2>
 	 	   <div class="info">
-	 	   	   <p>1�����÷�ʽ�����ǳ��򵥣���<span>ֻ��Ҫ��ҳ���������빫������js������÷�ʽ</span>��</p>
+	 	   	   <p>1、调用方式：（非常简单），<span>只需要在页面的最后引入公共导航js及其调用方式</span>；</p>
 	 	   	   <p>
 	 	   	      <strong>&lt;script src="//ossweb-img.qq.com/images/js/nz/nact.min.js">&lt;/script&gt;<br>
 					  &lt;script&gt;<br>
 						    new actNav({<br>
-						        actChannel:"15217",//Ƶ��id(һ�㲻��Ҫ��)<br>
-						        actPos:"18700",//LOGO���λid(һ�㲻��Ҫ��)<br>
-						        actPosNormal:"18702",//����ͼ���λid(һ�㲻��Ҫ��)<br>
-						        actPosHover:"18703",//�۽�״̬ͼƬ���λid(һ�㲻��Ҫ��)<br>
-						        sUrl:"navInfoListnz",//��Ӧ�ű������֣���ս�Ķ�Ӧֵ��"navInfoListnz",��սҳ�εĶ�Ӧֵ��"navInfoListnzw"<br>
-						        colorNormal:"#fff",//����״̬����ɫֵ,���ڻ����Զ���������ɫ<br>
-						        colorHover:"#0c0c0c"//�۽�״̬����ɫֵ,���ڻ����Զ���������ɫ<br>
+						        actChannel:"15217",//频道id(一般不需要变)<br>
+						        actPos:"18700",//LOGO广告位id(一般不需要变)<br>
+						        actPosNormal:"18702",//背景图广告位id(一般不需要变)<br>
+						        actPosHover:"18703",//聚焦状态图片广告位id(一般不需要变)<br>
+						        sUrl:"navInfoListnz",//对应脚本库名字，逆战的对应值："navInfoListnz",逆战页游的对应值："navInfoListnzw"<br>
+						        colorNormal:"#fff",//常规状态文字色值,用于换肤自定义文字颜色<br>
+						        colorHover:"#0c0c0c"//聚焦状态文字色值,用于换肤自定义文字颜色<br>
 						    });<br>
 						&lt;/script&gt;<br>
 	 	   	      </strong>
                </p>
-               <p>2��<span>����˵����</span></p>
-               <p><strong>actChannel:"15217",//Ƶ��id(һ�㲻��Ҫ��)��Ӧ��Ŀ���ϵͳ��id��</strong>�����һ�㲻�ùܣ�ֱ�Ӹ��ƹ������þͿ����ˣ�</p>
-               <p><strong>actPosNormal:"18702",//����ͼ���λid(һ�㲻��Ҫ��)</strong>��������Ƕ�Ӧһ�Ŵ�������ѭ���ı���ͼƬ����Ӧ�Ĺ��λid�����һ�㲻�ùܣ�ֱ�Ӹ��ƹ������þͿ����ˣ���</p>
-               <p><strong>actPosHover:"18703",//�۽�״̬ͼƬ���λid(һ�㲻��Ҫ��)</strong>��������Ƕ�Ӧһ��<span>����ѭ��</span>�ı���ͼƬ����Ӧ�Ĺ��λid�����һ�㲻�ùܣ�ֱ�Ӹ��ƹ������þͿ����ˣ���</p>
-               <p><strong>sUrl:"navInfoListnz",//��Ӧ�ű������֣���ս�Ķ�Ӧֵ��"navInfoListnz",��սҳ�εĶ�Ӧֵ��"navInfoListnzw"</strong>���������Ӧ���Ǻ�̨�����ṩ�Ľű����ݿ�����֣���ս�Ķ�Ӧֵ����д navInfoListnz������սҳ�ε��øÿؼ���ʱ������Ҫ��ΪnavInfoListnzw��</p>
-               <p><strong>colorNormal:"#fff",//����״̬����ɫֵ,���ڻ����Զ���������ɫ</strong>��������ǳ���״̬ÿ�����ֵ���ɫ��</p>
-               <p><strong>colorHover:"#0c0c0c"//�۽�״̬����ɫֵ,���ڻ����Զ���������ɫ</strong>������������hover����ǩ�ϵ�����ɫֵ���������ڵ�ֵһ�㱣�ֲ��䣬ֻ�ı��������ֵ�ɫֵ��</p>
-               <p>���demo��ַ��<a href="http://nz.qq.com/cp/a20160923nzgq/index_nact_demo.shtml" target="_blank">http://nz.qq.com/cp/a20160923nzgq/index_nact_demo.shtml</a></p>
-	 	   <p><strong><span>����https://nz.qq.com/web201606/js/nz_act_common.js</span></strong></p>
-			<p><strong><span>����Χ����Ⱦ�����ʹ��100%����min-width:1200px��</span></strong></p>
+               <p>2、<span>参数说明：</span></p>
+               <p><strong>actChannel:"15217",//频道id(一般不需要变)对应项目广告系统的id；</strong>（外包一般不用管，直接复制过来调用就可以了）</p>
+               <p><strong>actPosNormal:"18702",//背景图广告位id(一般不需要变)</strong>这个参数是对应一张带纹理的循环的背景图片，对应的广告位id（外包一般不用管，直接复制过来调用就可以了）；</p>
+               <p><strong>actPosHover:"18703",//聚焦状态图片广告位id(一般不需要变)</strong>这个参数是对应一张<span>横向循环</span>的背景图片，对应的广告位id（外包一般不用管，直接复制过来调用就可以了）；</p>
+               <p><strong>sUrl:"navInfoListnz",//对应脚本库名字，逆战的对应值："navInfoListnz",逆战页游的对应值："navInfoListnzw"</strong>这个参数对应的是后台开发提供的脚本数据库的名字，逆战的对应值这里写 navInfoListnz，而逆战页游调用该控件的时候这里要改为navInfoListnzw；</p>
+               <p><strong>colorNormal:"#fff",//常规状态文字色值,用于换肤自定义文字颜色</strong>这个参数是常规状态每项文字的颜色；</p>
+               <p><strong>colorHover:"#0c0c0c"//聚焦状态文字色值,用于换肤自定义文字颜色</strong>这个参数是鼠标hover到标签上的文字色值，这里日期的值一般保持不变，只改变主题文字的色值；</p>
+               <p>最后demo地址：<a href="http://nz.qq.com/cp/a20160923nzgq/index_nact_demo.shtml" target="_blank">http://nz.qq.com/cp/a20160923nzgq/index_nact_demo.shtml</a></p>
+	 	   <p><strong><span>引入https://nz.qq.com/web201606/js/nz_act_common.js</span></strong></p>
+			<p><strong><span>外层包围框宽度尽量不使用100%，用min-width:1200px；</span></strong></p>
 			<p><strong><span>L_ZoomPage.init(1200,$('body'));</span></strong></p>
 	 	   </div>
-	 	   <h2 class="stit">��ս����·��</h2>
+	 	   <h2 class="stit">逆战分离路径</h2>
 	 	   <div class="info">
-	 	   	    <p>//game.gtimg.cn/images/nz/cp/a�ļ���/</p>
+	 	   	    <p>//game.gtimg.cn/images/nz/cp/a文件夹/</p>
 	 	   </div>
 	 </div>
 </div>

@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="Description" content="ÕâÀïÊÇ¹Ø¼ü×ÖÃèÊö">
-<meta name="Keywords" content="ÕâÀïÊÇ¹Ø¼ü×Ö" />
+<meta name="Description" content="è¿™é‡Œæ˜¯å…³é”®å­—æè¿°">
+<meta name="Keywords" content="è¿™é‡Œæ˜¯å…³é”®å­—" />
 <title></title>
 <script>
 function AutoPage(){ 
@@ -50,22 +50,22 @@ body,html{width: 100%; height: 100%;}
 <body>
 <div class="wrap" id="pages">
      <div class="page page1">
-          <h1>µÚÒ»Ò³</h1>
+          <h1>ç¬¬ä¸€é¡µ</h1>
           <div class="box">
-            <p>ÕâÀïÊÇµÚÒ»ÆÁÄÚÈİ</p>
+            <p>è¿™é‡Œæ˜¯ç¬¬ä¸€å±å†…å®¹</p>
           </div>
      </div>
      <div class="page page2">
-          <h1>µÚ¶şÒ³</h1>
+          <h1>ç¬¬äºŒé¡µ</h1>
           <div class="box">
-             <p>ÕâÀïÊÇµÚ¶şÆÁÄÚÈİ</p>
+             <p>è¿™é‡Œæ˜¯ç¬¬äºŒå±å†…å®¹</p>
           </div>
      </div>
 </div>
 <script src="http://ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
 <script src="js/pageSwitch.js"></script>
 <script>
-//ÊÊÅä
+//é€‚é…
 var winw=$(window).width(),
 	winh=$(window).height(),
 	scale=winw/375;
@@ -87,27 +87,27 @@ function autoScale(is){
 		'height':100/is+'%'
 	});
 }
-//ÇĞÆÁ
+//åˆ‡å±
 var pw=new pageSwitch('pages',{
-	duration:400,           //int Ò³Ãæ¹ı¶ÉÊ±¼ä
-    direction:1,            //int Ò³ÃæÇĞ»»·½Ïò£¬0ºáÏò£¬1×İÏò
-    start:0,                //int Ä¬ÈÏÏÔÊ¾Ò³Ãæ
-    loop:false,             //bool ÊÇ·ñÑ­»·ÇĞ»»
-    transition:'scroll' //string|function×ª³¡·½Ê½
+	duration:400,           //int é¡µé¢è¿‡æ¸¡æ—¶é—´
+    direction:1,            //int é¡µé¢åˆ‡æ¢æ–¹å‘ï¼Œ0æ¨ªå‘ï¼Œ1çºµå‘
+    start:0,                //int é»˜è®¤æ˜¾ç¤ºé¡µé¢
+    loop:false,             //bool æ˜¯å¦å¾ªç¯åˆ‡æ¢
+    transition:'scroll' //string|functionè½¬åœºæ–¹å¼
 });
 </script>
 <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 <script>
- //´Ë¶Î´úÂë²»ÄÜ·Åµ½ÍâÁ´JSÖĞ£¬
- var setSite = { //ÉèÖÃÍøÕ¾ÊôĞÔ
- siteType: "axxxxxxxx", //±ØÌîÏî:"os"´ú±íÊÇ¹ÙÍø£¬Èç¹û²»ÊÇ£¬ÔòÌîĞ´actNameÀıÈça20160701xxx
- pageType: "index", //±ØÌîÏî:±¾Ò³ÃæµÄ¶¨Î»£»°´ÕÕÒ³Ãæº¬ÒåÌîĞ´ÀıÈçmain||list||detail||download||share||page1||pageN
- pageName: "Ê×Ò³", //±ØÌîÏî:Ò³ÃæÖĞÎÄÃû
- osact: 0, //Ñ¡ÌîÏî:ÊÇ·ñÊÇ¹ÙÍø×¨Ìâ(ÔÚ¹ÙÍøÔËÓªµÄ×¨Ìâ)boolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıosact=1À´Áé»îÉèÖÃ
- ingame: 0, //Ñ¡ÌîÏî:ÊÇ·ñÍ¶·ÅÔÚÓÎÏ·APPÄÚboolean£»Ä¬ÈÏÊÇ0£»¿ÉÒÔÔÚÁ´½ÓÉÏ¼ÓÈë²ÎÊıingame=1À´Áé»îÉèÖÃ
- stayTime: 0 //Ñ¡ÌîÏî:ÊÇ·ñĞèÒªÍ³¼ÆÍ£ÁôÊ±³¤boolean£»Ä¬ÈÏÊÇ0
+ //æ­¤æ®µä»£ç ä¸èƒ½æ”¾åˆ°å¤–é“¾JSä¸­ï¼Œ
+ var setSite = { //è®¾ç½®ç½‘ç«™å±æ€§
+ siteType: "axxxxxxxx", //å¿…å¡«é¡¹:"os"ä»£è¡¨æ˜¯å®˜ç½‘ï¼Œå¦‚æœä¸æ˜¯ï¼Œåˆ™å¡«å†™actNameä¾‹å¦‚a20160701xxx
+ pageType: "index", //å¿…å¡«é¡¹:æœ¬é¡µé¢çš„å®šä½ï¼›æŒ‰ç…§é¡µé¢å«ä¹‰å¡«å†™ä¾‹å¦‚main||list||detail||download||share||page1||pageN
+ pageName: "é¦–é¡µ", //å¿…å¡«é¡¹:é¡µé¢ä¸­æ–‡å
+ osact: 0, //é€‰å¡«é¡¹:æ˜¯å¦æ˜¯å®˜ç½‘ä¸“é¢˜(åœ¨å®˜ç½‘è¿è¥çš„ä¸“é¢˜)booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°osact=1æ¥çµæ´»è®¾ç½®
+ ingame: 0, //é€‰å¡«é¡¹:æ˜¯å¦æŠ•æ”¾åœ¨æ¸¸æˆAPPå†…booleanï¼›é»˜è®¤æ˜¯0ï¼›å¯ä»¥åœ¨é“¾æ¥ä¸ŠåŠ å…¥å‚æ•°ingame=1æ¥çµæ´»è®¾ç½®
+ stayTime: 0 //é€‰å¡«é¡¹:æ˜¯å¦éœ€è¦ç»Ÿè®¡åœç•™æ—¶é•¿booleanï¼›é»˜è®¤æ˜¯0
  }
- if (typeof (pgvMain) == 'function') pgvMain();//Ç§Íò²»ÄÜÍü¼Ç£¡
+ if (typeof (pgvMain) == 'function') pgvMain();//åƒä¸‡ä¸èƒ½å¿˜è®°ï¼
 </script>
 </body>
 </html>
